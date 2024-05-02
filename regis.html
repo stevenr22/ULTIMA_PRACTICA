@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    <title>.::SIGN IN::.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h2><b>SIG IN</b></h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <form action="val_regis.php" method="post" class="form-group">
+                    <div class="row">
+                        <div class="col">
+                            <label for="cedula" class="form-label">Cedula:</label>
+                            <input type="text" onkeypress="return validarcedula(event);" class="form-control" placeholder="Ingrese su cedula" name="ced" id="ced" required>
+
+
+                        </div>
+                        <div class="col">
+                            <label for="Nombre" class="form-label">Nombre:</label>
+                            <input type="text" onkeypress="return validarletras(event);" name="nom" id="nom" class="form-control" placeholder="Ingrese su nombre" required>
+                            <br>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col">
+                            <label for="Usu" class="form-label">Usuario: </label>
+                            <input type="text" placeholder="Ingrese su usuario" required class="form-control" name="usu" id="usu">
+                           
+                        </div>
+                        
+                        <div class="col">
+                            <label for="Contra" class="form-label">Contraseña:</label>
+                            <input type="password" name="pass" id="pass" class="form-control" placeholder="Ingrese su contraseña" required>
+                            <br>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success">Registrar</button>
+
+                        </div>
+                        <div class="col">
+                            <p>
+                                Tiene cuenta?
+                                <a href="login.html">Ingrese!</a>
+                            </p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+    
+</body>
+</html>

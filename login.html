@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap.css.map">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css.map">
+    
+
+    <title>.::LOG IN::.</title>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="card-header">
+                <div class="card-title">
+                    <h2><b>LOG IN</b></h2>
+                </div>
+            </div>
+            <div class="card-body">
+                <form class="form-group" action="val_log.php" method="post">
+                    <label for="Usu" class="form-label">Usuario: </label>
+                    <input type="text" placeholder="Ingrese su usuario" required class="form-control" name="usu" id="usu">
+                    <br>
+                    <label for="Contra" class="form-label">Contraseña:</label>
+                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Ingrese su contraseña" required>
+                    <br>
+                    <br>
+                    <div class="row">
+                        <div class="col">
+                            <button type="submit" class="btn btn-success">Ingrese!</button>
+                        </div>
+                        <div class="col">
+                            <p>
+                                No posee una cuenta?
+                                <a href="regis.html">Registrese!</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>
