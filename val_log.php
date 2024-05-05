@@ -9,9 +9,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     nom_usu = '$usu' and contra = '$contra'";
     $resultado = mysqli_query($conexion, $query);
     if(mysqli_num_rows($resultado) > 0) {
+        $usuario = mysqli_fetch_assoc($resultado);
+        $_SESSION['usuario'] = $usuario;
         echo "
         <script>
-            alert(' Usuario autenticado correctamente.');
             window.location = 'home.php';
         </script>
        

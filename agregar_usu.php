@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         echo "
         <script>
             alert(' Usuario registrado.');
-            window.location = 'regis.html';
+            window.location = 'home.php';
         </script>
        
         ";
@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             echo "
             <script>
                 alert('Usuario registrado correctamente.'); 
-                window.location = 'login.html';
+                window.location = 'home.php';
             </script>";
         } else {
             echo "
