@@ -73,19 +73,15 @@ if(isset($_SESSION['usuario'])) {
                                 <td><?php echo $fila['nom_usu']; ?></td>
 
                                 <td>
-
-                                    <form method="post" action="eliminar_usu.php">
-                                        <input type="hidden" name="cedula" value="<?php echo $fila['cedula']; ?>">
-                                        <button type="submit" class="btn btn-danger btn-sm"
-                                            onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?')">ELIMINAR</button>
-                                    </form>
-                                    <button type="button" data-toggle="modal" data-target="#modalEdit"
-                                        onclick="editarUsuario('<?php echo $fila['cedula']; ?>','<?php echo $fila['nombre_completo']; ?>','<?php echo $fila['nom_usu']; ?>');"
-                                        class="btn btn-info btn-sm">ACTUALIZAR</button>
-
-
-
+                                    <div class="btn-group">
+                                        <form method="post" action="eliminar_usu.php">
+                                            <input type="hidden" name="cedula" value="<?php echo $fila['cedula']; ?>">
+                                            <button type="submit" class="btn btn-danger btn-sm mr-2" onclick="return confirm('¿Estás seguro de que deseas eliminar este usuario?')">ELIMINAR</button>
+                                        </form>
+                                        <button type="button" data-toggle="modal" data-target="#modalEdit" onclick="editarUsuario('<?php echo $fila['cedula']; ?>','<?php echo $fila['nombre_completo']; ?>','<?php echo $fila['nom_usu']; ?>');" class="btn btn-info btn-sm">ACTUALIZAR</button>
+                                    </div>
                                 </td>
+
                             </tr>
                             <?php
                                     }
